@@ -6,7 +6,10 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: header_unsplash_12.jpg
+    image: "msur.jpg"
+    background-color: "#fabb00"
+    caption: Microservices Up & Running
+    caption_url: https://www.oreilly.com/library/view/microservices-up-and/9781492075448/
 widget1:
   title: "Blog & Portfolio"
   url: 'http://phlow.github.io/feeling-responsive/blog/'
