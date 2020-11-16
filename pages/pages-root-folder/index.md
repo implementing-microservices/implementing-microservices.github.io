@@ -7,7 +7,7 @@
 layout: frontpage
 header:
     image: "msur.jpg"
-    background-color: "#fabb00"
+    background-color: "##fcfcfc"
     caption: Microservices Up & Running
     caption_url: https://www.oreilly.com/library/view/microservices-up-and/9781492075448/
 widget1:
