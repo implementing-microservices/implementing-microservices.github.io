@@ -12,7 +12,7 @@ header:
     caption_url: https://www.oreilly.com/library/view/microservices-up-and/9781492075448/
 widget1:
   title: "Five Guiding Principles"
-  url: 'http://phlow.github.io/feeling-responsive/blog/'
+  url: 'https://implementing-microservices.github.io/five-principles.asciidoc'
   image: ralph-hutter-vuIBWXCI3Ro-unsplash.jpg
   text: 'The five guiding principles that shaped our microservices design decisions.'
 widget2:
