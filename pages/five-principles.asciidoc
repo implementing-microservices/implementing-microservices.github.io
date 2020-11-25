@@ -1,3 +1,11 @@
+---
+layout: page
+title: "Five Principles"
+meta_title: "CTBD"
+subheadline: "subhead"
+teaser: "teaser"
+permalink: "/five-principles/"
+---
 ==  Five Principles
 
 TK this is now an appendix. 
