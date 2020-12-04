@@ -1,4 +1,12 @@
-==  Five Principles
+---
+layout: page
+title: "Five Principles Micro Services"
+meta_title: "Contact and use our contact form"
+subheadline: "Wufoo-powered contact forms"
+teaser: "Get in touch with me? Use the contact form."
+permalink: "/five-principles-ms/"
+---
+##  Five Principles
 
 TK this is now an appendix. 
 
@@ -10,8 +18,7 @@ In this chapter, we'll supplement the general principles for Microservices with 
 
 But, let's start by taking a look at why we need to start with principles at all.
 
-[[ms-principles-why]]
-=== Why Principles Matter
+### Why Principles Matter
 
 The work of architecting, building and maintaining software involves a continuous stream of decision making. In order to create a Microservices architecture that best meets our needs, it makes sense that we'll need to influence those decisions as much as possible. There are lots of variables involved in the decision making process. For example, the people making decisions need to be talented enough to make good quality decisions. The organization needs to be designed to facilitate quality checks for important decisions. Also, the flow of co-ordination activities for the authorization of deicison making needs to be optimized so that execution can actually happen.
 
@@ -25,8 +32,7 @@ This is why it is useful to list out the principles for the Microservices archit
 
 Ultimately, we define principles as a way of identifying the things that we hold most important and will have the biggest influence on the decisions that our people make. That doesn't mean that the things we don't identify as principles don't matter. Instead, it's a reflection of the concepts we believe to have the greatest impact and to be most relevant to our success. Principles should help us make decisions that enable outcomes and goals for the architecture we are building. So, let's start by defining some goals for our Up & Running Microservices Architecture.
 
-[[ms-principles-goals-principles]]
-=== Goals and Principles
+### Goals and Principles
 
 The principles we define in this chapter will shape the type of architecture we build. So, we need to start by defining a few goals for our system so that we can drive our work in the right direction. When you build your own architecture, your goals should be closely aligned with the strategic and business goals of your organisation. But, for the purposes of this book, we'll choose three objectives that are a bit more general than the ones you might pick for yourself. We'll use three goals that we think will give you the best start:
 
@@ -41,8 +47,7 @@ Goal #3: Design a Domain Agnostic and Universally Applicable Solution::
 
 With these three goals in mind, we've drawn out five principles that we think are the most important for shaping our design and build: People-First Design, Rightsized Services, Build Services Only, Single Cloud Architecture and Twelve Factor Development. Of these five, the last principle of Twelve Factor Development will be the meatiest since its an entire set of constraints in its own right. But, all five of these principles are essential to building a system that will drive the outcomes that we want. We'll start by exploring the principle that addresses the most important part of our system: the people.
 
-[[ms-blueprint-principles-people-first]]
-=== People-First Design
+### People-First Design
 
 There are lots of variations of the _something_-first design pattern in the software architecture world. But, we've learned that putting people first is a key principle to building a Microservices system that works. Before we think about the infrastructure, the code and the message patterns we need to start by thinking about the people who will be building, maintaining and using what we create. We need to design for those people first.
 
@@ -58,8 +63,7 @@ When we build our architecture, we'll have an opportunity to use  existing metho
 
 The purpose of this principle is for us to change the way we approach our architectural decisions. Instead of starting with a focus on solving inefficiencies in technology, tools and patterns, we'll start by optimizing the way that people work and then build a platform to support them. We'll know we've done a good job in practice if it's easy for us to connect the dots between the things we are building and the people and goals that we are enabling.
 
-[[ms-blueprint-principles-rightsized-services]]
-=== Rightsized Services
+### Rightsized Services
 
 When Microservices first started becoming popular, it was the "micro" part of the name that caught a lot of people's attention. After all, we already had web services and services oriented architectures, so it was the perceived emphasis on very small services that got people's attention. Some teams fully embraced the micro-ness of the style and endeavoured to make their services as small as possible.
 
@@ -72,8 +76,7 @@ As we mentioned in Chapter One (TK), the great benefit of building software in t
 In practice, right-sizing is a non-trivial principle to adopt. It means that we need to understand how the size of our services will impact the work that people need to do. It also needs to recognize that service boundaries need to be fluid 
 and changeable to accomodate the dynamic, adaptive nature of the people and technology that they operate with. We'll tackle the challenge of how to right-size services in Chapter TK.
 
-[[ms-blueprint-principles-build-services-only]]
-=== Build-Services-Only
+### Build-Services-Only
 
 A Microservices architecture is greater than the collection of microservices it contains. As we'll see throughout this book, the microservices that power an application depend on a lot of other moving parts. For example, we'll need to design and build the network and servers that host the microservices. We'll need to implement some mechanism for the microservices to be independently deployed so they can be run as if they are micro-applications. As our collection of services grows, we'll need capabilities to co-ordinate messaging between micro-services and a platform that can scale and grow services as needed. Finally, we'll need to address all of the data and logging requirements for our services - in all of its many forms.
 
@@ -95,8 +98,7 @@ For our Microservices build we'll be making a big assumption. We'll assume that 
 
 That's why we are adopting this principle - we'll write code to build the Microservices and that's it. Whenever possible we'll buy and use existing services and we'll source tools from vendors and the open source community. This isn't a principle that will apply to every situation, but it will help us hit our goals of getting our platform up and running as quickly as possible, with room for it grow.
 
-[[ms-blueprint-principles-single-cloud]]
-=== Single-Cloud Architecture
+### Single-Cloud Architecture
 
 There is nothing about the Microservices style that says it has to be implemented in a cloud architecture. Decomposing an application into modular, deployable parts is something we should be able to do with just about any system. In fact, some people have even experimented with running on Microservices across clusters of Raspberry Pi devices (albeit mainly for educational and demonstration purposes). You can absolutely get the benefits of lowered co-ordination costs that come with the Microservices style, no matter who manages your infrastructure or where the computers it runs on are hosted.
 
@@ -112,10 +114,7 @@ Ultimately, when we build on a Cloud platform and use Cloud-based services we in
 
 In order to support the goals of our platform, we've decided to stick to a single-cloud approach. That doesn't mean we won't look for opportunities to increase the portability of our solution and reduce some of the inevitable lock-in that comes with using a Cloud platform. But it does mean that we won't limit ourselves to solutions that will work generically across every Cloud provider. 
 
-[[twelve-factor-apps]]
-=== 12 Factor Development
-
-(TK Shorten this chapter and make this about MS with pointers to 12 factors instead of walking through each of the 12 factors)
+### 12 Factor Development
 
 The defining property of a Microservices application is that it's made up of modular, bounded, indepdentally deployable service components. But, when you build applications with lots of services, the complexity of managing all those services can be a big challenge. Especially as the number of microservices grows and you need to operate at scale. You'll need a good strategy for reducing the operational costs of your services so they don't grow out of control. 
 
@@ -127,7 +126,7 @@ If we build our microservices using the twelve factor approach, we'll have a muc
 
 Let's take a look at the 12 factors as described at https://12factor.net. through the lens of a Microservices architecture:
 
-==== 1. "One codebase tracked in revision control, many deploys"
+#### 1. "One codebase tracked in revision control, many deploys"
 
 The code that runs an application has to come from one and only one code repository. For example, a single git repository. It also means that you deploy the same codebase in all of your application environments. Your development, testing and production environments should all run the same code from the same repository.
 
@@ -140,7 +139,7 @@ It's really important that we follow this practice for our Microservices build. 
 Some Microservices practitioners use a "mono-repo" approach to manage their code. That means that they keep all of their microservice code in a single, monolothic repository instead of maintaining many repositories for each microservice in the system. But, most teams who use a mono-repo still keep the code for each microservice in one and only one directory within the repository. This allows them to comply with the spirit of the "one codebase per microservice" constraint. We'll compare the mono-repo and multi-repo approches in more detail later in this book.
 ====
 
-==== 2.   "Explicitly declare and isolate dependencies"
+#### 2.   "Explicitly declare and isolate dependencies"
 
 When we follow the first factor, the code for the application will be contained in a single codebase. But in practice our code will still depend on other libraries, frameworks or components in order to run. For example, if we are writing a NodeJS application, we'll probably import a few Node modules so we don't have to re-invent code for problems that have already been solved.
 
@@ -152,7 +151,7 @@ Instead, we should build applications with frameworks that allow us to define de
 
 This constraint is really important for our Microservices system. As we start to scale up the number of microservices we write and operate, it's vital that we keep the predictability of our services high and the cost of maintenance and learning the code low. To make that happen, we'll need to be careful we are choosing which programming languages, frameworks and deployment tools we want to use when we build our Microservices.
 
-==== 3.  "Store config in the environment"
+#### 3.  "Store config in the environment"
 
 We've seen that a twelve factor application is built on a single codebase that declares its dependencies. So far, so good. But, in practice, its difficult to deploy the same codebase to multiple environments because each environment will have its own particular details. For example, the location of a shared database in production environment may have a different address than the database in a development environment. 
 
@@ -167,7 +166,7 @@ But, the third factor of the 12 factor method tells us that we must keep those c
 
 This is a good constraint to introduce for our microservices as well. Each microservice should be deployable as an independent unit that relies on environment variables to define environment specific behaviour. Writing our microservices this way will help us to maintain a single code base, while supporting deployment of those services in many different environments and configurations. But building this way means we'll need to be purposefully design our infrastructure to provide config as environment variables to our services.
 
-==== 4. "Treat backing services as attached resources"
+#### 4. "Treat backing services as attached resources"
 
 Applications can have lots of different dependencies. We've talked a bit already about libraries and code modules, but applications often need to interact with other running processes or services. For example, it's pretty common for an applications to access a shared database. Its also bcoming increasingly common for applications to depend on services that are managed by someone else. For example, an application that needs to send SMS messages might use a cloud based API that can send SMS messages. How should all of these backing services be managed?
 
@@ -182,7 +181,7 @@ It's useful to manage the backing services of an application (or our microservic
 
 That kind of freedom will allow us to  build an environment that is more configurable and flexible. It means that we can make changes to backend services without going through the work of changing code and re-buildling applications - as long as we have a running service to point the application towards. 
 
-==== 5.  "Strictly separate build and run stages"
+#### 5.  "Strictly separate build and run stages"
 
 A lot of the factors we've covered so far depend on one particularly important constraint: that we won't change our application code once it's in the deployment environment. Twelve factor applications have distinct release and run stages for their code. Application code changes always flow in a single direction through each of these phases consecutively.
 
@@ -194,7 +193,7 @@ One of the advantages of separating these stages is that it allows us to separat
 
 This is an important attribute for our microservices system. As the number of microservices that we need to manage grows, its important that we know that our environments and services can be easily re-built. TK why?
 
-==== 6. "Execute the app as one or more stateless processes"
+#### 6. "Execute the app as one or more stateless processes"
 
 When a twelve factor application is deployed, it is run as one or more executable processes. That means, we can transition the application  into a running state by starting one of its process in an execution environment. For example, a NodeJS-based tweleve factor application could be run using a shell script that starts its node server along with the accompanying javascript code files. Similarly, A docker based containerized application could be run by starting a container process for the application.
 
@@ -210,7 +209,7 @@ Running an application as a stateless process is an important property. It makes
 
 Remember that stateless processes doesn't mean that our Microservices won't have to deal with state. It only means that the state of a microservice isn't bound to the executable process it is running within. That means we may need to rely on shared data stores, caching mechanisms and data synchronization techniques. In fact, dealing with this conflict of stateless processes and stateful data is one of the most difficult problems to solve in a Microservices architecture. We'll dive into it in more detail in Chapter {TK} when we talk about Microservices data.
 
-==== 7. "Export services via port binding"
+#### 7. "Export services via port binding"
 
 Web-based applications use the HTTP protocol to listen for message based requests that they can service. To do that, they need to bind to a TCP/IP  address and port. This is the network address that consumers of the application will send requests into. Most application developers understand that this is how their web-based applications need to work - but, very few of those developers have the experience and knowledge to implement a production-grade web server for their application. 
 
@@ -222,7 +221,7 @@ Another way of saying this is that the application becomes self-contained. It me
 
 This seventh factor is a key part of what defines an application as a microservices. The birth of the microservices style of architecture has its roots in this shift towards self-contained, independently deployable applications that bind to a port.  The principle of self-containment and encapsulation lead architects down a road towards smaller bounded applications that could be easier to develop and maintain. So, this will be an easy factor for us to incorporate into our design.
 
-==== 8. "Scale out via the process model"
+#### 8. "Scale out via the process model"
 
 One of the advantages of running our  application within stateless processes is that it becomes easier to scale. The eighth factor addresses this scalability specifically by mandating that we should scale our applications only by replicating execution processes.  This is commonly referred to as "scaling out"as opposed to "scaling up" an application.
 
@@ -241,7 +240,7 @@ You can read more about the history of Pets vs Cattle in Randy Bias' blog post a
 
 Process-based scalability is a useful property for our microservices to have, so we'll need to design our systems and services to behave this way. We want to have the freedom to dynamically and elastically grow, shrink and maintain our microservices as needed. But, to do this, we'll need to be able to manage our microservices as interchangeable biological cells that collectively perform work instead of whole organisms that retain their own unique identities and state. But, process based management can be complicated - especially at scale. So, we'll need to think carefully about how we will manage all of our microservices processes. 
 
-==== 9.  "Maximise robustness with fast startup and graceful shutdown"
+#### 9.  "Maximise robustness with fast startup and graceful shutdown"
 
 So far, we've described how a twelve factor application needs to be run in a stateless process designed to be scaled out rather than up. But, the ninth factor highlights an important practical consideration for us to benefit from stateless processes. Our applications need to be optimised to run in this stateless, replaceable way.
 
@@ -251,7 +250,7 @@ By purposefully designing an  application to handle these lifecycle events, we i
 
 This is an important quality for our microservices to have. We've already mentioned that microserivces shift a lot of complexity into the underlying system and architecture. But, microservices that are designed to be executed statelessly can reduce a lot of the management cost. Knowing that we can destroy and create individual processes of a microservice quickly and safely reduces a great deal of operational burden. It means, we can automate scaling and resilience processes for our services. Taking this further, we could even introduce tooling to manage microservices processes entirely. We'll see some examples of that when we tackle our Microservices infrastructure in chapter (TK)
 
-==== 10. "Keep development, staging, and production as similar as possible"
+#### 10. "Keep development, staging, and production as similar as possible"
 
 While most of the twelve factors relate to how the application is designed and managed, this factor describes a more general goal. The execution environments that the application will run in should be as similar as possible. That means that the development, testing and production environments should have as little variation as possible in terms of the configuration of the infrastructure, the software that is installed and the backing services and dependencies that are deployed.
 
@@ -263,7 +262,7 @@ This is a problem worth solving for our Microservices system as well. As the num
 
 Resolving this variation will require a concerted DevOps oriented effort that touches all parts of the microservices delivery lifecycle. We'll need to be able to replicate backing services across environments, eliminate human operator "one-off" changes and make our infrastructure changes repeatable and predictable. We'll dive into this problem in more detail in chapter {TK} when we build our Microservices DevOps pipeline.
 
-==== 11. "Treat logs as event streams"
+#### 11. "Treat logs as event streams"
 
 Logs are an important part of any application. Without them we don't have the visibility and observability we need in order to troubleshoot problems, improve efficiency or improve the product it delivers. The application logging domain is inherently a data domain. A good logging solution involves capturing data, normalizing it, categorizing it, persisting it, archiving it and making it searchable and usable.
 
@@ -271,7 +270,7 @@ But, the twelve factor application is purposefully designed to avoid the complex
 
 It's a good constraint to introduce to our microservices as well. By limiting the scope of logging to the emission of logs to a Unix pipe-like stream, we can reduce the development and maintenance load on our microservices developers. We'll still have to design and develop the underlying logging system, but this loose coupling allows us to address the logging solution in an encapsulated, separate way.
 
-==== 12. "Run admin/management tasks as one-off processes"
+#### 12. "Run admin/management tasks as one-off processes"
 
 When an application is in a running state, there is sometimes a need to run administrative, management or maintenance processes against it. For example, an application may need to migrate data form an existing schema to a new one. Or the application may need to have some data records and processes removed in order to avoid over-runing resource usage limits and remain in a "steady state".
 
@@ -283,8 +282,7 @@ But, we also have an opportunity to minimise our need for these kinds of clean-u
 
 This is the essence of the principle of disposability. We'll endeavour to build our microservices this way so that we can minimise the amount of administration and management processing that will be needed to run them. We'll even try to build our infrastructure with disposability so that it can be re-built (or "re-hydrated") on a regular basis. If we build our Microservices architecture correctly this last factor of the twelve factor app should be an easy one to incorporate.
 
-[[ms-blueprint-summary]]
-=== Summary
+### Summary
 
 In this chapter we introduced the goals for our architecture and the principles that will help us achieve them. We also outlined our five principles of People-First Design, Rightsized Services, Build Services Only, Single-Cloud Architecture and Twelve Factor Development. Throughout this book we'll apply these principles to our design decisions along with the foundational, general characteristics and principles of a Microservices architecture that we introduced in the first chapter.
 
