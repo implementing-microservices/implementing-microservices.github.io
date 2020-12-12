@@ -8,9 +8,9 @@ permalink: "/five-principles-ms/"
 ---
 # The Microservices Up & Running Model: Five Principles 
 
-In our book "Microservices Up & Running", we've introduced an opinionated microservices architecture to help you build your first microservices system with strong direction. The opinions and decicions we made for our microservices system were based on a set of five principles that we defined while we wrote the book. We weren't able to include them in the book because of the physical contraints of page counts for a book. However, we've presented them here for anyone who is interested.
+In our book "Microservices Up & Running", we've introduced an opinionated microservices architecture to help you build your first microservices system with strong direction. The opinions and decicions we made for our microservices system were based on a set of five principles that we defined while we wrote the book. We originally wrote a chapter outlining the goals and principles for our model, but decided to omit it so that we could focus on the practical aspects of a microservices build. But, we've included this "lost" chapter here as a reference.
 
-But, let's start by taking a look at why a good architctural design should start with principles at all.
+Let's start by taking a look at why a good architctural design should start with principles at all.
 
 ### Why Principles Matter
 
@@ -265,9 +265,4 @@ This is the essence of the principle of disposability. We'll endeavour to build 
 
 ### Summary
 
-In this chapter we introduced the goals for our architecture and the principles that will help us achieve them. We also outlined our five principles of People-First Design, Rightsized Services, Build Services Only, Single-Cloud Architecture and Twelve Factor Development. Throughout this book we'll apply these principles to our design decisions along with the foundational, general characteristics and principles of a Microservices architecture that we introduced in the first chapter.
-
-We also paid special attention to the influential twelve factor development approach that came from the platform company Heroku. We walked through each of the twelve factors and explored their usefulness for a Microservice system and how they might influence the design and decision-making for our architecture.
-
-From this point onwards, the  decisions we make will influenced by the principles that have been defined in this chapter. With this starting foundation established, we can now move onto the work of designing and building our system. We'll start by embracing the first principle of People-First Design and address the challenges of team design and co-ordination of work with a high performance operating model.
-
+This bonus chapter outlined the goals and principles that drove the [decisions](https://github.com/implementing-microservices/ADRs) we made in the Microservices Up & running book. You can use it as a reference for your own microservice projects when you need to set your own principles to shape your decision making.
