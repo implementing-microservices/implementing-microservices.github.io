@@ -1,9 +1,7 @@
 ---
 layout: page
-title: "Five Principles Micro Services"
-meta_title: "Contact and use our contact form"
-subheadline: "Wufoo-powered contact forms"
-teaser: "Get in touch with me? Use the contact form."
+title: "The Five Principles of the Microservices Up & Running Model"
+meta_title: "The principles that shaped our design"
 permalink: "/five-principles-ms/"
 ---
 # The Microservices Up & Running Model: Five Principles 
