@@ -6,25 +6,29 @@
 #
 layout: frontpage
 header:
-    image: "msur.jpg"
+    image: "mup-book-cover.png"
     background-color: "##fcfcfc"
-    caption: Microservices Up & Running
-    caption_url: https://www.oreilly.com/library/view/microservices-up-and/9781492075448/
+    caption_dis: Microservices Up & Running
+    caption_url_dis: http://microservicesup.com
 widget1:
   title: "Five Guiding Principles"
   url: 'https://implementing-microservices.github.io/five-principles-ms/'
-  image: ralph-hutter-vuIBWXCI3Ro-unsplash.jpg
+  image: mup-five.jpg
   text: 'The five guiding principles that shaped our microservices design decisions.'
 widget2:
   title: "Code Samples"
-  url: 'http://phlow.github.io/feeling-responsive/info/'
-  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+  url: 'https://github.com/implementing-microservices'
+  image: mup-code.jpg
+  text: 'Most of the code for the book is under the <i>Implementing Microservices</i> organization on Github. In cases where the book is referring to other repositories, they are linked in the text directly.'
 widget3:
   title: "Links to Tools"
-  url: 'https://github.com/Phlow/feeling-responsive'
-  image: widget-github-303x182.jpg
-  text: '<em>Feeling Responsive</em> is free and licensed under a MIT License. Make it your own and start building. Grab the <a href="https://github.com/Phlow/feeling-responsive/tree/bare-bones-version">Bare-Bones-Version</a> for a fresh start or learn how to use it with the <a href="https://github.com/Phlow/feeling-responsive/tree/gh-pages">education-version</a> with sample posts and images. Then tell me via Twitter <a href="http://twitter.com/phlow">@phlow</a>.'
+  image: mup-tools.jpg
+  text: '<ul><li><a href="https://www.terraform.io/">Terraform</a></li>
+<li><a href="https://kubernetes.io/">Kubernetes</a></li>
+<li><a href="https://helm.sh/docs/topics/charts/">Helm</a></li>
+<li><a href="https://traefik.io/traefik-enterprise/">Traefik</a></li>
+</ul>
+'
 #
 # Use the call for action to show a button on the frontpage
 #
@@ -36,9 +40,8 @@ widget3:
 # To change colors see sass/_01_settings_colors.scss
 #
 callforaction:
-  url: https://tinyletter.com/feeling-responsive
-  text: Inform me about new updates and features ›
-  style: alert
+  url: http://microservicesup.com/
+  text: Buy the book ›
 permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight

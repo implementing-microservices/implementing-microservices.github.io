@@ -1,5 +1,6 @@
-{% if page.header == NULL and page.header.image_fullwidth == NULL and page.header.pattern == NULL and page.header.background-color == NULL and page.header.title == NULL %}
+AJSJJSJSJJSJS
 
+{% if page.header == NULL and page.header.image_fullwidth == NULL and page.header.pattern == NULL and page.header.background-color == NULL and page.header.title == NULL %}
 <div id="masthead-no-image-header">
 	<div class="row">
 		<div class="small-12 columns">
@@ -16,10 +17,7 @@
 
 
 
-
-
 {% elsif page.header.title %}
-
 <div id="masthead-with-text" style="{% if page.header.background-color %}background: {{ page.header.background-color }};{% endif %} {% if page.header.image_fullwidth %}{% elsif page.header.pattern %}background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('{{ site.urlimg }}/{{ page.header.pattern }}'){% endif %}">
 	<div class="row">
 		<div class="small-12 columns">
@@ -34,11 +32,15 @@
 
 {% if page.header.caption_url && page.header.caption %}
 <div class="masthead-caption">
-	<a href="{{ page.header.caption_url }}">{{ page.header.caption }}</a>
+	option 1
+	<!--a href="{{ page.header.caption_url }}">{{ page.header.caption }}</!--a-->
 </div>
 {% elsif page.header.caption %}
 <div class="masthead-caption">
+	option 2
+	<!--
 	{{ page.header.caption }}
+	-->
 </div>
 {% endif %}
 
@@ -77,7 +79,6 @@
 
 
 {% elsif page.header.pattern %}
-
 <div id="masthead-with-pattern" style="background: url('{{ site.urlimg }}/{{ page.header.pattern }}')">
 	<div class="row">
 		<figure class="small-12 columns">
@@ -105,12 +106,17 @@
 
 
 {% elsif page.header.background-color %}
-
+<style>
+	img#book { border: 1px solid silver; }
+</style>
 <div id="masthead-with-background-color" style="background: {{ page.header.background-color }};">
 	<div class="row">
-		<figure class="small-12 columns">
-			<img src="{{ site.urlimg }}/{{ page.header.image }}" alt="{{ site.title }}">
-		</figure><!-- /.small-12.columns -->
+		<div class="columns small-4"><img id="book" src="{{ site.urlimg }}/{{ page.header.image }}" alt="{{ site.title }}"></div>
+		<div class="columns small-8">
+			<p>Microservices architectures offer faster change speeds, better scalability, and cleaner, evolvable system designs. But implementing your first microservices architecture is difficult. How do you make myriad choices, educate your team on all the technical details, and navigate the organization to a successful execution to maximize your chance of success? With this book, authors Ronnie Mitra and Irakli Nadareishvili provide step-by-step guidance for building an effective microservices architecture.
+
+      <p>Architects and engineers will follow an implementation journey based on techniques and architectures that have proven to work for microservices systems. You'll build an operating model, a microservices design, an infrastructure foundation, and two working microservices, then put those pieces together as a single implementation. For anyone tasked with building microservices or a microservices architecture, this guide is invaluable.
+		</div>
 	</div><!-- /.row -->
 </div><!-- /#masthead -->
 
